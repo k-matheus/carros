@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da empresa</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo para os botões */
+        .color-btn {
+            padding: 10px 20px;
+            background-color: #545555;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .color-btn:hover {
+            background-color: #8f9292;
+        }
+    </style>
+</head>
+<body>
+    <section id="AutoCars">
+        <h1>Auto cars</h1>
+    </section>
+    <section id="Sobre">
+        <h2>Sobre</h2>
+        <p>Oferecemos carros com qualidade, tecnologia avançada e design inovador para todos os estilos de vida. Desde modelos econômicos até os mais luxuosos, garantimos segurança, conforto e desempenho em cada viagem.
+
+            Visite-nos e aproveite as ofertas especiais [AutoCars] Seu destino começa aqui!</p>
+    </section>
+    <section id="Automóveis">
+        <h3>Automóveis</h3>
+        <p>A Autocars oferece automóveis de alta qualidade, focando em conforto e segurança. Seus veículos, como ônibus e carros de luxo, costumam ter poltronas confortáveis, sistemas de climatização, tecnologia como Wi-Fi e telas individuais, além de segurança avançada. A frota é projetada para garantir viagens confortáveis e seguras, com boa quantidade de espaço e opções de luxo em alguns modelos.</p>
+    </section>
+
+    <!-- Botões para mudar a cor -->
+    <div id="color-buttons">
+        <button class="color-btn" onclick="changeRandomColor()">Mudar Cor Aleatória</button>
+        <button class="color-btn" onclick="resetColor()">Voltar à Cor Original</button>
+    </div>
+
+    <section id="bottom">
+        <a href="https://seminovos.com.br/revenda/automoveis-bh">Autocars</a>
+    </section>
+    <footer id="rodape">&copy; "Empresa" Todos os direitos reservados</footer>
+
+    <script>
+        // Armazenando a cor original
+        const originalBackgroundColor = document.body.style.backgroundColor;
+        const originalTextColor = getComputedStyle(document.body).color;
+
+        // Função para gerar uma cor aleatória
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Função para mudar a cor para aleatória
+        function changeRandomColor() {
+            const randomColor = getRandomColor();
+            document.body.style.backgroundColor = randomColor;  // Cor de fundo aleatória
+            document.getElementById("AutoCars").style.color = randomColor; // Cor do título da seção
+            document.getElementById("Sobre").style.color = randomColor; // Cor do texto da seção
+            document.getElementById("Automóveis").style.color = randomColor; // Cor do texto da seção
+            
+        }
+
+        // Função para voltar à cor original
+        function resetColor() {
+            document.body.style.backgroundColor = originalBackgroundColor;  // Voltar à cor original
+            document.getElementById("AutoCars").style.color = 'white'; // Voltar à cor original
+            document.getElementById("Sobre").style.color = 'white'; // Voltar à cor original
+            document.getElementById("Automóveis").style.color = 'white'; // Voltar à cor original
+        }
+    </script>
+</body>
+</html>

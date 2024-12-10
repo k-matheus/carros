@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255, 253, 253, 0.349);
+    background-image: url(imagem/pexels-anewevisual-7537128.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh ;
+}
+
+#AutoCars{
+        text-align: center;
+        color: rgba(20, 19, 19, 0);
+        background: rgba(3, 3, 3, 0.281) ;
+        height: 80px;
+        padding: 17px;
+        text-align-last: center;
+        font-size: 19px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;display:  flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        transform: translateX(10px);
+        transition: all 0.5s ease-in-out;
+        opacity: 0.7;
+
+    }
+
+
+    #Sobre{
+        border: 1px solid;
+        text-align: center;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        color: rgba(241, 233, 233, 0.863);
+        background:linear-gradient(black,rgb(107, 105, 105), rgb(53, 52, 52) );
+        border-radius:40px ;
+        height: 150px;
+        padding: 18px;
+        margin: 55px 35px;
+        font-size: 19px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        transform: translateX(10px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    #Automóveis{
+        border: 1px solid ;
+        text-align: center;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        color: rgba(241, 233, 233, 0.863);
+        background:linear-gradient(black,rgb(107, 105, 105), rgb(53, 52, 52) );
+        border-radius:40px ;
+        height: 169px;
+        padding: 20px;
+        margin: 100px 35px;
+        font-size: 19px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        transform: translateX(10px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    #rodape{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+        background: black ;
+        height:70px;
+        padding: 17px;
+        text-align-last: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 17px;
+        position: fixed; 
+        bottom: 0px;
+        width: 100vw;
+         
+    }
+    
+    #bottom{
+        margin-top: 100px;
+    }
+
+    #color-buttons {
+        position: fixed;   
+        top: 0;            
+        right: 0;          
+        text-align: end; 
+        flex-direction: row-reverse; 
+        margin: 10px; 
+        font-size: 20px;   
+    }
+    .color-btn{
+        border-radius: 5px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .color-btn:hover{
+     transform: translateY(-5px);
+     transition: all 0.5s ease-in-out;
+    }
+
+
+    a{
+        text-align: center;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+        color:rgb(241, 240, 240);
+    }
